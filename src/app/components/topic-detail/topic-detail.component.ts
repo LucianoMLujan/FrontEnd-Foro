@@ -35,7 +35,11 @@ export class TopicDetailComponent implements OnInit {
     this.url = global.url;
     this.identity = this._userService.getIdentity();
     this.token = this._userService.getToken();
-    this.comment = new Comment('', '', '', this.identity._id);
+
+    if(this.identity !== null) {
+      this.comment = new Comment('', '', '', this.identity._id);
+    }
+    
    }
 
   ngOnInit() {

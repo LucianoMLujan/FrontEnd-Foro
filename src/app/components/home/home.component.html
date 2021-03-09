@@ -4,9 +4,9 @@
       <h1 class="display-4">{{page_title}}</h1>
       <p class="lead">Pon tus dudas, aprende y ayuda a tus compañeros desarrolladores.</p>
       <p>
-          <a href="#" class="btn btn-primary btn-lg mr-3"> Ver temas. </a>
-          <a href="#" class="btn btn-success btn-lg mr-3"> Ver compañeros. </a>
-          <a href="#" class="btn btn-warning btn-lg mr-3"> Añadir nuevo tema. </a>
+          <a [routerLink]="['/temas']" class="btn btn-primary btn-lg mr-3"> Ver temas. </a>
+          <a [routerLink]="['/usuarios']" class="btn btn-success btn-lg mr-3"> Ver compañeros. </a>
+          <a [routerLink]="['/panel/crear']" class="btn btn-warning btn-lg mr-3"> Añadir nuevo tema. </a>
       </p>
     </div>
   </div>
